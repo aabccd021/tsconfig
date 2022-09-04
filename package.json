@@ -4,4 +4,15 @@
   "license": "MIT",
   "main": "tsconfig.json",
   "files": [ "tsconfig.json"]
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  }
 }
